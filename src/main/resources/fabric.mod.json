@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "enchantingrangemod",
+	"version": "${version}",
+	"name": "EnchantingRangeMod",
+	"description": "Simple extension of Enchanting table's bookshelf detect range",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/enchantingrangemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tarkodev.enchantingrangemod.EnchantingRangeMod"
+		],
+		"fabric-datagen": [
+			"net.tarkodev.enchantingrangemod.EnchantingRangeModDataGenerator"
+		]
+	},
+	"mixins": [
+		"enchantingrangemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
